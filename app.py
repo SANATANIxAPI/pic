@@ -178,7 +178,7 @@ async def handle_quality_selection(client, callback_query):
         with open(file_path, "rb") as f:
             files = {"file": f}
             response = requests.post(
-                f"http://localhost:{PORT}/api/enhance",
+                f"http://5.249.150.146:{PORT}/api/enhance",
                 files=files,
                 params={"quality": quality}
             )
